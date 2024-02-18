@@ -2,7 +2,8 @@
 日本のwikiサービスwikiwikiをObsidianから操作します。  
 apiを使用する為、事前に[wikiのapiキーとシークレットを発行](https://zawazawa.jp/wikiwiki-rest-api/topic/5)してください。
 ## install
-
+releaseからsource以外を全てダウンロードし、一意の名称がついたフォルダにまとめてpluginフォルダに入れる。
+名称はこのリポジトリの名称(wikiwiki-sync-obsidian)でも構いません。
 ## Command
 ### Get all pages
 wikiの全ページを`/`以下に読み込みます。  
