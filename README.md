@@ -1,5 +1,5 @@
 # WikiWiki Sync
-日本のwikiサービスwikiwikiをObsidianから操作します。
+日本のwikiサービスwikiwikiをObsidianから操作します。  
 apiを使用する為、事前に[wikiのapiキーとシークレットを発行](https://zawazawa.jp/wikiwiki-rest-api/topic/5)してください。
 ## Command
 ### Get all pages
