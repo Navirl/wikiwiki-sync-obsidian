@@ -1,0 +1,11 @@
+{
+	"id": "wikiwiki-sync-obsidian",
+	"name": "WikiWiki Sync",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Sync Obsidian with WikiWiki",
+	"author": "Navirl",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://ko-fi.com/navirl",
+	"isDesktopOnly": false
+}
