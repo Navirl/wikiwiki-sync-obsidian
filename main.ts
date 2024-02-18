@@ -127,7 +127,9 @@ export default class SyncWikiWiki extends Plugin {
 							}
 							file = await this.app.vault.create(`/${name}.md`, "")
 						}
-						const test = await this.app.vault.read(file)
+						if (!(file instanceof TFile)) {
+							continue
+						}
 						let yamlObj: any = yamlFrontMatter.loadFront(await this.app.vault.read(file))
 						if(yamlObj.__content == ""){
 							yamlObj = yamlFrontMatter.loadFront("---\ndate: 1970-01-01T00:00:00.000Z\n---\n")
@@ -161,6 +163,10 @@ export default class SyncWikiWiki extends Plugin {
 
 	async putPage() {
 		const file = this.app.workspace.getActiveFile();
+		if (!(file instanceof TFile)) {
+			new Notice("Please select a file")
+			return
+		}
 		let name: string = file?.basename ? file?.basename : "";
 		let parentObj = file?.parent;
 		while (parentObj) {
