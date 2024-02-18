@@ -5,7 +5,7 @@
 	"minAppVersion": "0.15.0",
 	"description": "Sync Obsidian with WikiWiki",
 	"author": "Navirl",
-	"authorUrl": "https://obsidian.md",
+	"authorUrl": "https://github.com/Navirl/wikiwiki-sync-obsidian",
 	"fundingUrl": "https://ko-fi.com/navirl",
 	"isDesktopOnly": false
 }
